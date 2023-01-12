@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    color: rgb(243, 243, 243);
+    box-sizing: border-box;
+    font-size: 1.16em;
+    font-family: 'Oxanium', cursive;
+    font-feature-settings: 'tnum';
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(to bottom, #47b9db,#fff);
+    min-height: 90%;
+    background-repeat: no-repeat;
+}
+
+
+main {
+    display: inline-block;
+    margin-top: 2%;
+    position: relative;
+}
+
+
+.pokemon__number {
+
+    color: #3c454c
+
+
+}
+
+.pokemon__image {
+    position: absolute;
+    bottom: 53%;
+    left: 50.5%;
+    transform: translate(-63%, 20%);
+    width: 50%;
+    height: 17%;
+    object-fit: contain;
+    
+}
+.pokedex {
+    width: 100%;
+    max-width: 425;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.star {
+    position: absolute;
+    transform: scale(0.03,0.03);
+    display: flex;
+    justify-content: center;
+    left: -30%;
+    top: -50%;
+    opacity: 95%;
+
+}
+.pokedexInfoPokemon {
+    width: 95%;
+    padding: 0.7%;
+    margin: 0;
+    position: absolute;
+    left: 98%;
+    bottom: 5%;
+    object-fit: contain;
+    z-index: -1;
+
+}
+.pokemon__data {
+    position: absolute;
+    font-weight: 600;
+    color: #000;
+    top: 54.5%;
+    right: 27%;
+    font-size: clamp(8px, 5vw, 25px);
+}
+.pokemon__name {
+    color: #3a444d;
+    text-transform: capitalize;
+    
+
+}
+.form {
+    position: absolute;
+    width: 65%;
+    top: 65%;
+    left: 13.5%
+
+}
+.input__search {
+    width: 100%;
+    padding: 4%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #3a444d;
+    font-size: clamp(8px, 5vw, 1rem);
+    box-shadow: -3px 4px 0 #888, -5px 6px 0 #333
+}
+
+.stats {
+    position: absolute;
+}
+.button {
+    width: 50%;
+    padding: 4%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: clamp(8px, 5vw, 1rem);
+    font-weight: 600;
+    color: white;
+    background-color: #444;
+    box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+}
+
+#stats {
+    position: absolute;
+    float: right;
+    flex-direction: column;
+    gap: 30%;
+    top: 34.2%;
+    left: 161%;
+    Text-align: left;
+
+
+} 
+#types {
+    position: absolute;
+    display: flex;
+    justify-content: left;
+    bottom: 49%;
+    left: 235%;
+    gap: 350%;
+    width: 90%;
+    transform: scale(0.3,0.3);
+    z-index: 0;
+}
+.type_image { 
+    position: relative;
+    display: flex; 
+    z-index: 1000;
+    object-position: 50% 50%
+}
+
+.buttonsINVISIVEL{
+    position: absolute;
+    bottom: 42%;
+    left: 52.1%;
+    width: 65%;
+    transform: translate(-2%, 0);
+    display: flex;
+    gap: 20px;
+}
+.d-pad {
+    position: absolute;
+}
+.buttons {
+    position: absolute;
+    bottom: -40%;
+    left: 54%;
+    width: 22%;
+    height: 65%;
+    transform: translate(3%, 0);
+    display: flex; 
+    object-position: 5% 5%
+}
+.set {
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+}
+.d-pad {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 48%;
+    overflow: hidden;
+    justify-content: center;
+}
+.d-pad:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 5%;
+    transform: translate(-50%, -50%);
+    width: 3vw;
+    height: 3vh;
+    background: rgb(0, 0, 0);
+}
+.d-pad:after {
+    content: '';
+    position: absolute;
+    display: none;
+    z-index: 2;
+    width: 22%;
+    height: 20%;
+    top: 50%;
+    left: 50%;
+    background: #000;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.25s;
+    cursor: pointer;
+  }
+  .d-pad a {
+    position: absolute;
+    width: 36.3%;
+    height: 43%;
+    line-height: 40%;
+    color: rgb(214, 11, 11);
+    background: rgb(25, 25, 27);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .d-pad a:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-radius: 5px;
+    border-style: solid;
+    transition: all 0.50s;
+ 
+  }
+  /*POSIÇÃO PARTE ESQUERDA E DIREITA*/
+  .d-pad a.left,
+  .d-pad a.right {
+    width: 63%;
+    height: 33%;
+  }
+  /*Inútil*/
+  .d-pad a.left:after,
+  .d-pad a.right:after {
+    width: 78%;
+    height: 102%;
+  }
+  /*POSIÇÃO PARTE DE CIMA*/
+  .d-pad a.up {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 17% 17% 50% 50%;
+}
+/*Tamanho da seta de Cima */
+.d-pad a.up:before {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-width: 0 10px 16px 10px;
+    border-color: transparent transparent rgb(0, 0, 0) transparent;
+}
+/*Tamanho da seta de Baixo */
+.d-pad a.down:before {
+    bottom: 40%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    border-width: 16px 10px 0px 10px;
+    border-color: rgb(0, 0, 0) transparent transparent transparent;
+}
+.d-pad a.up:hover:before {
+    top: 35%;
+}
+/*Tamanho da seta da Esquerda */
+.d-pad a.left:before {
+    left: 30%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-width: 10px 16px 10px 0;
+    border-color: transparent #000 transparent transparent;
+}
+/*Tamanho da seta da Direita */
+.d-pad a.right:before {
+  right: 30%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  border-width: 10px 0 10px 16px;
+  border-color: transparent transparent transparent #000;
+}
+
+/*POSIÇÃO PARTE DE BAIXO*/
+.d-pad a.down {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 50% 50% 19% 19%;
+}
+/*Sombra seta de Baixo */
+.d-pad a.down:hover {
+    box-shadow: inset -4px 4px 0 rgb(25, 25, 27);
+    font-size: 0.9rem;
+}
+/*Inútil*/
+.d-pad a.down:after {
+    right: 20;
+    bottom: 0;
+    transform: translate(100%, 0);
+    border-bottom-right-radius: 50%;
+    pointer-events: none;
+}
+/*Cor da seta de Baixo */
+.d-pad a.down:active:before {
+    border-top-color: #333;
+}
+/*Cor da seta de Cima */
+.d-pad a.up:active:before {
+    border-bottom-color: #333;
+}
+/*Cor da seta da Esquerda */
+.d-pad a.left:active:before {
+    border-right-color: #333;
+}
+/*Cor da seta da Direita */
+.d-pad a.right:active:before {
+  border-left-color: #333;
+}
+
+/*POSIÇÃO PARTE DA ESQUERDA*/
+.d-pad a.left {
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    border-radius: 17% 50% 50% 17%;
+}
+.d-pad a.left:hover {
+    box-shadow: inset -4px 4px 0 rgb(25, 25, 27);
+    font-size: 0.9rem;
+}
+.d-pad a.left:after {
+    left: 0;
+    bottom: 0;
+    transform: translate(0, 100%);
+    border-bottom-left-radius: 50%;
+    pointer-events: none;
+}
+.d-pad a.left:hover:before {
+    left: 35%;
+}
+
+/*POSIÇÃO PARTE DA DIREITA*/
+.d-pad a.right {
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    border-radius: 50% 17% 17% 50%;
+}
+.d-pad a.right:after {
+    right: 0;
+    top: 0;
+    transform: translate(0, -100%);
+    border-top-right-radius: 50%;
+    pointer-events: none;
+}
+/*Não mexer*/
+.d-pad a.right:hover:before {
+    right: 35%;
+}
+/*Não mexer*/
+.d-pad.up a.up:before {
+    border-bottom-color: #333;
+}
+/*Não mexer*/
+.d-pad.down a.down:before {
+    border-top-color: #333;
+}
+/*Não mexer*/
+.d-pad.left a.left:before {
+    border-right-color: #333;
+}
+/*Não mexer*/
+.d-pad.right a.right:before {
+    border-left-color: #333;
+}
+/*Não mexer*/
+.d-pad a.right:hover {
+    box-shadow: inset -4px 4px 0 rgb(25, 25, 27);
+    font-size: 0.9rem;
+}
+/*Não mexer*/
+.d-pad a.down:hover:before {
+    bottom: 35%;
+}
