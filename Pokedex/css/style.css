@@ -25,7 +25,6 @@ main {
     position: relative;
 }
 
-
 .pokemon__number {
 
     color: #3c454c
@@ -142,6 +141,7 @@ main {
     transform: scale(0.3,0.3);
     z-index: 0;
 }
+
 .type_image { 
     position: relative;
     display: flex; 
