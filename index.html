@@ -15,25 +15,18 @@
 		<!-- Header -->
 		<section id="header">
 
-			<!-- Logo -->
-			<h1><a href="index.html">Welcome to my portfolio!</a></h1>
+			<!-- Banner -->
+				<header>
+					<div class="nav">
+						<a href="#Home" style="text-decoration:none;">Home</a>
+						<a href="#PersonalProjects" style="text-decoration:none;">Personal Projects</a>
+						<a href="#CollegeProjects" style="text-decoration:none;">College Projects</a>
+						<a href="#About" style="text-decoration:none;">About</a>
+						<a href="#Contact" style="text-decoration:none;">Contact</a>
+					</div>
+				</header>
 
 			<!-- Nav -->
-			<nav id="nav">
-				<ul>
-					<li class="current"><a href="index.html">Home</a></li>
-					<li>
-				</ul>
-			</nav>
-
-			<!-- Banner -->
-			<section id="banner">
-				<header>
-					<h2>Diana Siqueira</h2>
-					<p>Currently studying Computer Science at UFSC</p>
-				</header>
-			</section>
-
 			<!-- Intro -->
 
 			<div class="row">
@@ -52,28 +45,30 @@
 							</header>
 							<div class="row">
 								<div class="col-4 col-6-medium col-12-small">
-									<section class="box">
-										<a href="#" class="image featured"><img src="/portfolio/Portfolio/images/pokedex-project.jpg"
-												alt="" /></a>
-										<header>
-											<h3>Pokédex</h3>
-										</header>
-										<p>Virtual Pokédex developed in JS, CSS and HTML using PokeAPI.ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</p>
-										<footer>
-											<ul class="actions">
-												<li><a href="https://dexeme.github.io/Pokedex-js/#" target="_blank"
-														class="button alt">Open</a>
-													<a href="https://github.com/demexe/Pokedex-js/" target="_blank"
-														class="button alt">Github page</a>
-												</li>
-											</ul>
-										</footer>
+									<section class="box" id="Pokedex">
+									  <div class="image-container">
+										<img class="static-image" src="/portfolio/Portfolio/images/pokedex-project.jpg" alt="" />
+										<div class="gif-overlay"></div>
+										<img class="gif-image" src="/portfolio/gifs/pikachu_cursed.gif" alt="gif-overlay" />
+									  </div>
+									  <header>
+										<h3>Pokédex</h3>
+									  </header>
+									  <p>Virtual Pokédex developed in JS, CSS and HTML using PokeAPI.</p>
+									  <footer>
+										<ul class="actions">
+										  <li>
+											<a href="https://dexeme.github.io/Pokedex-js/#" target="_blank" class="button alt">Open</a>
+											<a href="https://github.com/demexe/Pokedex-js/" target="_blank" class="button alt">Github page</a>
+										  </li>
+										</ul>
+									  </footer>
 									</section>
-								</div>
-								<div class="col-4 col-6-medium col-12-small">
-									<section class="box">
-										<a href="#" class="image featured"><img src="/portfolio/Portfolio/images/flashlight-project.jpg"
-												alt="" /></a>
+								  </div>
+							<div class="col-4 col-6-medium col-12-small">
+								<section class="box">
+									<a href="#" class="image featured"><img src="/portfolio/Portfolio/images/flashlight-project.jpg"
+										alt="" /></a>
 										<header>
 											<h3>Flashlight - pygame</h3>
 										</header>
@@ -84,7 +79,7 @@
 											<ul class="actions">
 												<li><a href="https://demexe.github.io/portfolio/Flashlight/build/web/flashlight.html"
 														target="_blank" class="button alt">Open</a>
-													<a href="https://github.com/demexe/pygame-flashlight"
+													<a href="https://github.com/dexeme/pygame-flashlight"
 														target="_blank" class="button alt">Github page</a>
 												</li>
 											</ul>
