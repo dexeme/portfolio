@@ -1,0 +1,94 @@
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 16px;
+  border: 2px solid rgba(139, 212, 255, 0.35);
+  background: linear-gradient(145deg, rgba(20, 25, 43, 0.9), rgba(9, 11, 19, 0.9));
+  box-shadow: 0 18px 40px rgba(8, 10, 18, 0.45);
+}
+
+.project-card::after {
+  content: '';
+  position: absolute;
+  inset: 10px;
+  border: 1px dashed rgba(139, 212, 255, 0.3);
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+.project-card__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.project-card__year {
+  align-self: flex-start;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.55rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 6px;
+  background: rgba(248, 245, 162, 0.12);
+  color: #f8f5a2;
+  letter-spacing: 0.1em;
+}
+
+.project-card h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  color: #f4f6fb;
+}
+
+.project-card__description {
+  margin: 0;
+  color: #b9c7ff;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.project-card__stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.project-card__stack li {
+  font-size: 0.7rem;
+  font-family: 'Press Start 2P', cursive;
+  letter-spacing: 0.08em;
+  padding: 0.45rem 0.6rem;
+  border-radius: 6px;
+  background: rgba(124, 136, 255, 0.14);
+  color: #9db2ff;
+}
+
+.project-card__cta {
+  align-self: flex-start;
+  padding: 0.6rem 0.9rem;
+  font-size: 0.75rem;
+  font-family: 'Press Start 2P', cursive;
+  letter-spacing: 0.08em;
+  border-radius: 8px;
+  border: 2px solid rgba(139, 212, 255, 0.6);
+  background: rgba(8, 10, 18, 0.9);
+  color: #8bd4ff;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card__cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 0 3px rgba(139, 212, 255, 0.3);
+}

@@ -1,0 +1,150 @@
+.sidebar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-height: 100vh;
+  padding: 2.5rem 2rem;
+  background: linear-gradient(180deg, rgba(25, 29, 49, 0.9) 0%, rgba(12, 13, 23, 0.85) 100%);
+  border-right: 4px solid #171b2f;
+  max-width: 280px;
+}
+
+.sidebar__logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border: 3px solid #30375c;
+  border-radius: 12px;
+  background: #090b12;
+  box-shadow: 0 0 0 4px #090b12, 0 0 0 8px #30375c;
+}
+
+.sidebar__logo-icon {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+  color: #8bd4ff;
+  text-shadow: 0 0 8px rgba(139, 212, 255, 0.5);
+}
+
+.sidebar__logo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+}
+
+.sidebar__logo-text strong {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.7rem;
+  color: #ffffff;
+}
+
+.sidebar__logo-text span {
+  font-size: 0.65rem;
+  color: #9db2ff;
+}
+
+.sidebar__section-title {
+  font-size: 0.65rem;
+  font-family: 'Press Start 2P', cursive;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #7c88ff;
+  margin: 0 0 0.75rem;
+}
+
+.sidebar__nav ul,
+.sidebar__social ul {
+  display: grid;
+  gap: 0.6rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar__nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.6rem;
+  border-left: 3px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.sidebar__nav a:hover {
+  border-color: #8bd4ff;
+  color: #8bd4ff;
+}
+
+.sidebar__divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(124, 136, 255, 0.6), transparent);
+}
+
+.sidebar__status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  font-size: 0.85rem;
+  color: #e6ebff;
+}
+
+.status-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  background: #2cfb8c;
+  box-shadow: 0 0 6px rgba(44, 251, 140, 0.6);
+}
+
+.sidebar__quote {
+  margin: 1rem 0 0;
+  font-size: 0.8rem;
+  color: #b5c2ff;
+  line-height: 1.4;
+}
+
+.sidebar__quote-label {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.55rem;
+  color: #f8f5a2;
+  margin-right: 0.4rem;
+}
+
+.sidebar__social a {
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid rgba(124, 136, 255, 0.25);
+  border-radius: 10px;
+  background: rgba(15, 18, 33, 0.75);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.sidebar__social a:hover {
+  border-color: #8bd4ff;
+  transform: translateX(4px);
+}
+
+.sidebar__social-label {
+  font-size: 0.75rem;
+  color: #dbe3ff;
+}
+
+.sidebar__social-handle {
+  font-size: 0.65rem;
+  color: #8bd4ff;
+}
+
+@media (max-height: 760px) {
+  .sidebar {
+    position: static;
+    min-height: auto;
+  }
+}
