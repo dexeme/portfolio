@@ -1,10 +1,10 @@
 import './Sidebar.css'
 
 const quickLinks = [
-  { label: 'Visão geral', href: '#inicio' },
-  { label: 'Projetos', href: '#projetos' },
-  { label: 'Laboratório', href: '#laboratorio' },
-  { label: 'Contato', href: '#contato' },
+  { label: 'Overview', href: '#inicio' },
+  { label: 'Projects', href: '#projetos' },
+  { label: 'Lab', href: '#laboratorio' },
+  { label: 'Contact', href: '#contato' },
 ]
 
 const socialLinks = [
@@ -23,8 +23,8 @@ export default function Sidebar() {
         </div>
       </div>
 
-      <nav className="sidebar__nav" aria-label="Navegação principal">
-        <h2 className="sidebar__section-title">Mapa</h2>
+      <nav className="sidebar__nav" aria-label="Primary navigation">
+        <h2 className="sidebar__section-title">Map</h2>
         <ul>
           {quickLinks.map((item) => (
             <li key={item.href}>
@@ -42,12 +42,12 @@ export default function Sidebar() {
         </h2>
         <p className="sidebar__status">
           <span className="status-dot" />
-          Disponível para freelas selecionados
+          Available for selected freelance collaborations
         </p>
       </section>
 
-      <section className="sidebar__social" aria-label="Redes sociais">
-        <h2 className="sidebar__section-title">Redes</h2>
+      <section className="sidebar__social" aria-label="Social networks">
+        <h2 className="sidebar__section-title">Networks</h2>
         <ul>
           {socialLinks.map((item) => (
             <li key={item.label}>

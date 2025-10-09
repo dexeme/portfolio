@@ -165,7 +165,7 @@
 
 .highlight-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
 }
 
@@ -196,62 +196,54 @@
 }
 
 .highlight-card__body--stack {
-  grid-template-rows: auto auto;
+  gap: 1rem;
 }
 
-.highlight-card__heatmap {
+.highlight-card__role {
   display: grid;
-  gap: 0.4rem;
+  gap: 1rem;
+  color: #b9c7ff;
 }
 
-.heatmap-line {
-  display: inline-block;
-  height: 18px;
-  border-radius: 8px;
-  background: linear-gradient(90deg, rgba(124, 136, 255, 0.2), rgba(124, 136, 255, 0.7));
-  box-shadow: inset 0 0 0 2px rgba(11, 16, 29, 0.7);
-}
-
-.highlight-card__summary {
-  display: flex;
-  gap: 1.25rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.highlight-card__summary li {
-  display: grid;
-  gap: 0.4rem;
-  text-align: left;
-}
-
-.highlight-card__summary strong {
-  font-size: 1.6rem;
-}
-
-.highlight-card__summary span {
-  font-size: 0.8rem;
-  color: #a5b6ff;
-}
-
-.chip-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.chip-list li {
-  padding: 0.55rem 0.75rem;
+.highlight-card__role strong {
   font-family: 'Press Start 2P', cursive;
-  font-size: 0.55rem;
+  font-size: 0.75rem;
   letter-spacing: 0.08em;
-  border-radius: 8px;
-  background: rgba(124, 136, 255, 0.18);
-  color: #9db2ff;
+  color: #f8f5a2;
+}
+
+.highlight-card__role ul {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.highlight-card__role li {
+  line-height: 1.5;
+}
+
+.skills-list {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #b9c7ff;
+}
+
+.skills-list li {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.skills-list strong {
+  color: #f8f5a2;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  display: inline-block;
+  margin-bottom: 0.25rem;
 }
 
 .pixel-art-slot {
@@ -270,46 +262,7 @@
   letter-spacing: 0.08em;
 }
 
-.progress-list {
-  display: grid;
-  gap: 1rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.progress-list li {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 0.6rem 1.2rem;
-  align-items: center;
-}
-
-.progress-list__label {
-  font-size: 0.9rem;
-}
-
-.progress-list__bar {
-  grid-column: 1 / -1;
-  width: 100%;
-  height: 12px;
-  border-radius: 8px;
-  background: rgba(124, 136, 255, 0.15);
-  overflow: hidden;
-}
-
-.progress-list__bar span {
-  display: block;
-  height: 100%;
-  background: linear-gradient(90deg, #7c88ff, #8bd4ff);
-}
-
-.progress-list__value {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 0.6rem;
-  letter-spacing: 0.08em;
-  color: #f8f5a2;
-}
+/* Removed learning track styles */
 
 .achievements {
   display: grid;
@@ -366,7 +319,7 @@
 
 .lab__grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
 }
 
@@ -388,6 +341,15 @@
 .lab-card p {
   margin: 0;
   color: #b9c7ff;
+}
+
+.lab-card a {
+  color: #8bd4ff;
+  text-decoration: none;
+}
+
+.lab-card a:hover {
+  text-decoration: underline;
 }
 
 .lab-card__footer {

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8F5A2" stop-opacity="0.65" />
+      <stop offset="100%" stop-color="#0B0D1C" stop-opacity="0.95" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#grad)" rx="28" />
+  <text x="50%" y="45%" text-anchor="middle" fill="#0B0D1C" font-family="'Press Start 2P', monospace" font-size="18">
+    Quantum Firewall Visualizer
+  </text>
+  <text x="50%" y="60%" text-anchor="middle" fill="#0B0D1C" font-family="'Press Start 2P', monospace" font-size="14">
+    View 2
+  </text>
+</svg>
